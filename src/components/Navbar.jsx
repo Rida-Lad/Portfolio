@@ -1,29 +1,34 @@
-import React from 'react';
-
-const Navbar = ({ currentSlide, scrollToSlide, totalSlides }) => {
-  const icons = [
-    { icon: '🏠', label: 'Home' },
-    { icon: '👤', label: 'About' },
-    { icon: '💼', label: 'Work' },
-    { icon: '📞', label: 'Contact' },
-    { icon: '📝', label: 'Blog' }
+const Navbar = ({ currentSlide, goToSlide, totalSlides }) => {
+  const navItems = [
+    { name: 'Home'},
+    { name: 'Skills'},
+    { name: 'Projects'},
+    { name: 'Contact'}
   ];
 
   return (
-    <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50">
-      <div className="flex flex-col space-y-6">
-        {icons.map((item, index) => (
-          <button
-            key={index}
-            onClick={() => scrollToSlide(index)}
-            className={`nav-icon text-xl ${currentSlide === index ? 'active-nav' : 'text-gray-400'}`}
-            aria-label={item.label}
-          >
-            {item.icon}
-          </button>
-        ))}
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-70 backdrop-blur-md py-4 px-6 border-b border-gray-800">
+      <div className="flex justify-between items-center">
+        <div className="flex items-center">
+          <div className="text-red-600 font-bold text-2xl tracking-tight">RIDA LADIB</div>
+        </div>
+        
+        <div className="hidden md:flex space-x-8">
+          {navItems.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`flex items-center space-x-1 transition-all duration-300 ${
+                currentSlide === index ? 'text-red-600' : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              <span>{item.name}</span>
+            </button>
+          ))}
+        </div>
+        
       </div>
-    </div>
+    </nav>
   );
 };
 
