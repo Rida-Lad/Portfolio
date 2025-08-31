@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 3px;
+}
+
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* Navigation hover effects */
+.nav-icon {
+  transition: all 0.3s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.2);
+  color: #dc2626;
+}
+
+.active-nav {
+  color: #dc2626;
+  transform: scale(1.2);
+}
