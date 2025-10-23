@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const App = () => {
   const quotes = [
-    "My goal isn't just to complete a task but it's to transform your daily frustrations into streamlined efficiency using the power of Microsoft Office.",
+    "My goal isn't just to complete a task but it's to transform your daily frustrations into streamlined efficiency using the power of creativity.",
     "I believe in the power of good organization and clean data to free up your time for the things that matter most.",
     "For me, the greatest professional satisfaction is seeing the moment my client realizes, 'I don't have to struggle with this anymore.' That's why I am dedicated to service",
-    "I genuinely love helping people, and my expertise in Excel, Word, and PowerPoint is simply my way of making a tangible, positive difference in their work day.",
-    "I believe that my role as a freelancer is to act as a support system, solving the technical challenges so you can focus entirely on your core business."
+    "I genuinely love helping people, and my expertise in development tools is simply my way of making a tangible, positive difference in their work day.",
+    "I believe that my role as a worker is to act as a support system, solving the technical challenges so you can focus entirely on your core business."
   ];
 
   const themes = [
