@@ -171,7 +171,7 @@ const App = () => {
               label: 'Gmail'
             },
             { 
-              href: 'https://linkedin.com/in/rida-ladib', 
+              href: 'https://linkedin.com/in/ridaladib', 
               icon: <FaLinkedin className="w-8 h-8" />,
               label: 'LinkedIn'
             },
